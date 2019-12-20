@@ -1,0 +1,471 @@
+/*
+  *To makes style for contact us pages
+  *This page tells the customers about our local
+  *The customer can contact us by this site
+  *The local in the map
+*/
+@font-face{
+   font-family:roboto;
+   src: url(font/Roboto-Regular.ttf);
+}
+.icon-webar {
+  width:20%;
+  height:10%;
+}
+body
+{
+  font-family: roboto;
+  margin:0px;
+  padding: 0px;
+  background-color: white;
+  overflow-x:hidden;/*hide bar at the buttom*/
+}
+/*.container{
+  z-index: -1;
+}*/
+.fix 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 5px;
+  }
+
+  .fix, +.container{ /*the sigh '+' to prevent scall menu*/
+    /*padding-top: 100px;*/
+  }
+
+/*=====banner image=============*/
+#banner-img
+{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+/*logo at left site*/
+#logo-top
+{
+  width: 210px;
+  position: relative;
+}
+
+/*hold menu*/
+.nav-bar{
+  position: relative;
+  top: -10px;
+}
+ul
+{
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);/*to identify the menu in the middle*/
+  background: #272624;
+  width: 100%;
+  height: 60px;
+} 
+/*menu*/
+ul li
+{
+  display: inline-block;
+  transform-style: preserve-3d;
+  position:relative;
+  left: 20%;
+  top: -73px;
+}
+ul li a
+{
+  font-size: 16px;
+  font-family: arial;
+  font-transform:uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  position: relative;
+}
+
+/*each menu*/
+ul li a span
+{
+  display: block;
+  padding: 0px 15px;
+  margin-left:10px;
+  width: 90px;
+}
+
+/*before event hover*/
+ul li a span:before
+{
+  content: attr(title);
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #008081;
+  color: #fff;
+  padding: 31px 45px; /*mouse hover will see the padding*/
+  width: 85px;
+  transform-style: preserve-3d;
+  transition: .5s;
+  transform: rotateX(90deg) translateY(50px);
+  transform-origin: bottom;
+}
+
+/*inimation rotax*/
+ul li a span:hover:before{
+  transform: rotateX(0deg) translateY(0px);
+}
+
+/*after event hover*/
+ul li a span:after{
+  content: attr(title);
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #272624;
+  color:#ecb551;
+  padding: 31px 45px;
+  width: 85px;
+  transform-style: preserve-3d;
+  transition: .5s;
+  transform: rotateX(0deg) translateY(0px);
+  transform-origin: top; /*To make rotax to the top of the menu*/
+}
+ul li a span:hover:after
+{
+  transform: rotateX(90deg) translateY(-10px);
+}
+/*======container was separated into colunms map and input ======*/
+
+/*.container
+{
+  position: relative;
+  left: 3%;
+  right: 3%;
+  width: 100%;
+}*/
+.container,#our-local{
+  width: 95%;
+}
+.separate{
+  float: left;
+
+}
+
+.contact
+{
+  position: relative;
+  padding: 10px;
+  left: 30%;
+  top: 16px;
+  background: #fbf9f9;
+  height: 430px;
+  border-radius: 5px;
+}
+
+
+/*===============footer at the buttom of the page=================*/
+.my-footer /*hold footer*/
+{
+  position: absolute;
+  width: 100%;
+  top: 2000px;
+  height: 200px;
+  background: #0a0a0ad4;
+  color:#fbf9f9;
+}
+
+/*=============follow us===============*/
+.icons /*make all style elements in footer*/
+{
+  position: relative;
+  float: left;
+  width: 12%;
+  padding: 5px;
+  top: -26px;
+}
+.footer-row
+{
+  position: relative;
+  width: 100%;
+  top: 15px;
+}
+.follow-us
+{
+  position: relative;
+  width: 25%;
+  padding: 10px;
+  left: 25%;
+  font-weight: bold;
+
+}
+
+  /*============ font asci code left culunm==================*/
+  h4:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+  }
+
+  h4 span 
+  {
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 33%;
+    top: -21px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+
+/*============copy right part in the midle culunm=========*/
+.col-midle
+{
+  position: relative;
+  width: 300px;
+}
+.float-cols{
+  position: relative;
+  float: left;
+  left: 6%;
+
+}
+#my-logo{
+  position: relative;
+  width: 55%;
+  left: 40%;
+}
+
+/*============font asci code midle site ==================*/
+  h3:before{
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 33%;
+  }
+  h3 span{
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 61%;
+    top: -21px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+
+/*=============right colunm===============*/
+.row-right
+{
+  width: 300px;
+  left: 20%;
+}
+#location
+{
+  position: relative;
+  left: 25%;
+  font-weight: bold;
+
+}
+#text-location{
+  font-size: 13px;
+  position: relative;
+  width: 200px;
+  left: 16%;
+  top: -20px;
+}
+ #text-copyRingt{
+  position: relative;
+  font-size: 13px;
+  left: 32%;
+}
+
+/*==============font asci code==================*/
+  h5:before{
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 7%;
+    top:69px;
+  }
+  h5 span{
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 35%;
+    top: -8px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+
+
+ 
+ /*layot product.*/
+
+.container{         
+  width:100%;
+  margin:0 auto;
+  margin-top:10%;
+  margin-bottom:20%;
+  
+}
+.col-md-3{      /* the 4 cards of one row */
+  width:21%;
+  float:left;
+  margin: 2% 2% 2% 2%;
+  background: white;
+  box-shadow:1px 2px 1px 2px grey;
+  color:white;
+  border-top:1px solid grey;
+}
+button{      /*    button with the price*/
+  width:100px;
+  padding:7px;
+  margin-bottom:10px;
+  border:none;
+  background:orange;
+  color:white;
+  cursor:pointer;
+  border-radius:50px;
+}
+.card-body{       /*card body style of the product columns*/
+  margin-left:16%;
+}
+.card-header{  /* card header body style*/
+  text-align:center;
+  padding:10px;
+}
+.card-footer{ /* card footer style*/
+  text-align:center;
+  background:#009688;
+  padding:3px;
+}
+.getValue{  /*the input type number of the bottom of the card*/
+  width: 50px;
+  padding:8px;
+  border-radius:5px;
+  margin-right:8%;
+  margin-top:1%;
+  border:none;
+  cursor: pointer;
+}
+.btn {
+  margin-left:8%;
+  margin-top:2%;
+  border-radius:5px;
+  width:40%;
+  padding:10px;
+  cursor: pointer;
+}
+.pro-title { /* product tilte page*/
+  text-align:center;
+  margin-top:-70px;
+  color:#3c2e2eb8;
+}
+
+
+/*calculation*/
+table {        
+  width:44%;
+  margin:0 auto;
+  border:5px solid #009688;
+  text-align:center;
+  box-shadow:1px 2px 3px 4px grey;
+}
+td{
+  margin-left:80px;
+}
+.total-title {
+  text-align:center;
+}
+.total-section {
+  margin-top:40px;
+  text-align: left;
+  margin-left:-80px;
+  font-weight: bold;
+}
+.pro-name { /*product name*/
+  border:none;
+  font-size:18px;
+  text-align: center;
+  font-weight: bold;
+  color:#009688;
+}
+.pro-name:hover {
+  color:orange;
+}
+.pro-style {
+  margin-left:17px;
+  margin-top:10px;
+}
+.cara {
+  margin-left:25px;
+}
+hr.style-hr {
+width: 20%;
+margin-right:40%;
+margin-top: -20px;
+padding: 0;
+border: none;
+height: 2px;
+color: orange;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+text-align: center;
+}
+hr.style-hr:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background-size: 90px 90px;
+height: 2px;
+top: -20px;
+width: -50px
+}
+hr.style-hr1 {
+width: 20%;
+margin-right:40.5%;
+margin-top: -20px;
+padding: 0;
+border: none;
+height: 2px;
+color: orange;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+text-align: center;
+}
+hr.style-hr1:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background-size: 90px 90px;
+height: 2px;
+top: -20px;
+width: -50px
+}

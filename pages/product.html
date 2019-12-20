@@ -1,0 +1,246 @@
+
+ <!--  
+  *Author: Khorn Sitha.
+   -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drink Store</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logoo.png" id="icon-webar" / >
+
+  <!-- link for product.css -->
+  <link rel="stylesheet" type="text/css" href="../css/style-product.min.css">
+  <a href="home-page.html"><link rel="icon" href="../images/logoo.png"></a><!-- icon in the name of website -->
+</head>
+<body>
+  <!-- =====================Header of the page at the top======================== -->
+  <div> 
+      <img  id="banner-img" src="../images/product-banner-4.png">
+  </div>
+
+  <div class="contence-fix" id="nav-bar">
+      <ul>
+        <a href="../index.html"><img id="logo-top" src="../images/logoo.png" alt="Mylogo"></a>
+        <li><a href="../index.html"><span title="Home"></span></a></li>
+        <li><a href="about_us.html"><span title="About Us"></span></a></li>
+        <li><a href="#"><span title="Product"></span></a></li>
+        <li><a href="contact.html"><span title="Contact Us"></span></a></li>
+      </ul><br>
+  </div><br><br><br>
+
+  <!-- =========================the container of the page======================== -->
+  <div class="container">
+              <h1 class="pro-title">Our products</h1>
+              <hr class="style-hr"> 
+      <div class="row">
+       <div class="row1"> <!-- the first row of 4 cards of the product. -->
+              <div class="col-md-3">
+                <div class="card-header"> <!-- product name   -->
+                  <input type="text" name="cambodia-beer" value="Cambodia beer" readonly="" class="pro-name" id="getName1">
+                </div>
+                <div class="card-body"> <!-- product image -->
+                  <img src="../images/cambodia.jpg" alt="" width="178px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  
+                  <div>
+                      <label>Qty  </label> <!-- to get the number of the product -->
+                      <input type="number" min="1" class="getValue" value="1"  id="getQty1">
+                      <button class="btn" id="price1" value="0.5" onclick="getPrice1()"> 0.5$ Buy Now</button>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                  <input type="text" name="fanta" readonly="" value="Fanta" class="pro-name" id="getName2">
+                </div>
+                <div class="card-body">
+                    <img src="../images/fanta-apple.jpg" alt=""  width="178px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  
+                  <div>
+                      <label>Qty </label>
+                      <input type="number"  min="1" class="getValue" value="1" id="getQty2">
+                      <button class="btn"  id ="price2" value="0.5" onclick="getPrice2()"> 0.5$ Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                  <input type="text" name="pepsi" readonly="" value="Pepsi" class="pro-name" id="getName3">
+                </div>
+                <div class="card-body">
+                    <img src="../images/pepsi1.jpg" alt="" width="178px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  
+                    <div>
+                      <label>Qty  </label>
+                      <input type="number" min="1" class="getValue" value="1"  id="getQty3">
+                      <button class="btn" id ="price3" value="0.5" onclick="getPrice3()"> 0.5$ Buy Now</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                  <input type="text" name="sprite" readonly=""  value ="Sprite" class="pro-name" id="getName4">
+                </div>
+                <div class="card-body">
+                    <img src="../images/sprite.png" alt="" id="sprite" width="170px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  <div>
+                      <label>Qty </label>
+                      <input type="number" min="1" class="getValue" value="1" id="getQty4">
+                      <button class="btn"  id= "price4"value="0.5" onclick ="getPrice4()"> 0.5$ Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div> <!--  the end of the row 1-->
+   
+   <!--+++++++++++  start of the row 2 that have 4 cards +++++++++++-->
+      <div class="row">
+       <div class="row2">
+              <div class="col-md-3">
+                <div class="card-header">
+                 <input type="text"  readonly="" value="Caraboa" class="pro-name" id="getName5">
+                </div>
+                <div class="card-body">
+                  <img src="../images/caraboa.jpg" alt="" width="140px" height="180px" class="pro-style cara"/>
+                </div>
+                <div class="card-footer">
+                  
+                  <div>
+                      <label>Qty  </label>
+                      <input type="number" min="1" class="getValue" value="1"  id="getQty5">
+                      <button class="btn" id="price5" value="0.5" onclick="getPrice5()"> 0.5$ Buy Now</button>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                  <input type="text" min="1" readonly=""  value="Redbull" class="pro-name" id="getName6">
+                </div>
+                <div class="card-body">
+                    <img src="../images/redbull.jpeg " alt=""  width="168px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  
+                  <div>
+                      <label>Qty </label>
+                      <input type="number" min="1" class="getValue" value="1" id="getQty6">
+                      <button class="btn"  id="price6" value="0.7" onclick="getPrice6()"> 0.7$ Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                 <input type="text" name="pro-name" readonly="" value="Pocarisweat" class="pro-name" id="getName7">
+                </div>
+                <div class="card-body">
+                    <img src="../images/pocarisweat.jpg" alt="" width="178px" height="180px" class="pro-style"/>
+                </div>
+                <div class="card-footer">
+                  
+                    <div>
+                      <label>Qty  </label>
+                      <input type="number" min="1" class="getValue" value="1" id="getQty7">
+                      <button class="btn"   id ="price7" value="0.7" onclick="getPrice7()"> 0.7$ Buy Now</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card-header">
+                 <input type="text" min="1" readonly=""  value ="Bachhuss" class="pro-name" id="getName8">
+                </div>
+                <div class="card-body">
+                    <img src="../images/bachuss5.jpg" alt="" width="185px" height="180px" class="pro-style" />
+                </div>
+                <div class="card-footer">
+                  <div>
+                      <label>Qty </label>
+                      <input type="number" min="1"  class="getValue"  id="getQty8" value="1">
+                      <button class="btn" id = "price8" value="0.5" onclick="getPrice8()"> 0.5$ Buy Now </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    </div> <!-- the end of the row 2 -->
+  </div> <!-- the end of the container -->
+    <table id="myTable">
+        <thead>
+          <tr><h1 class="total-title">Total with us</h1></tr>
+          <hr class="style-hr1"> 
+          <tr>
+            <th><h2 class="element">Product</h2></th>
+            <th><h2 class="element-price">UnitPrices($)</h2></th>
+            <th><h2 class="element">Total($)</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <div class="total-section">
+                <hr class="underline">
+                <p id="total">Sub Total($):</p>
+                <p id="discount"> Discount(%):</p>
+                <p id="total-dollar">Total payment($): </p>
+                <p id="total-riel">Total payment(riel):</p>
+              </div>
+            </td>
+
+          </tr>
+
+
+        </tbody>
+      </table>
+
+     
+ <!-- =========== footer width 100% height 200px ======== -->
+    <footer class="my-footer">
+      <div class="footer-row">
+        <div class="col-left float-cols">
+          <p class="follow-us">Follow Us :</p>
+          <h4><span>&#9775;</span></h4>        
+          <a href="https://www.facebook.com"><img class="icons" src="../images/facebook.png"></a>
+          <a href="https://www.gmail.com"><img class="icons" src="../images/messag.png"></a>
+          <a href="http://www.instargram.com"><img class="icons" src="../images/instagram.png"></a>
+          <a href="https://www.linkedin.com"><img class="icons" src="../images/linked-in.png"></a>
+          <a href="https://www.twinter.com"><img class="icons" src="../images/itwitter.png"></a> 
+        </div>
+
+        <div class="col-midle float-cols">
+            <img id="my-logo" src="../images/logoo.png">
+            <h3><span>&#9775;</span></h3>
+            <p id="text-copyRingt">&#0169 2019Copy@right by Pop-drink.com</p>
+        </div>
+        <div class="row-right float-cols">
+          <p id="location">Our location </p>
+          <h5><span>&#9775;</span></h5>
+          <p id="text-location">Passerelles Numeriques Cambodia
+          Street 371 Tropeang Chhuk(Borey Sorla), Phnom Penh city.<br></p>
+        </div>
+
+      </div>
+    </footer>
+
+  <script src="../js/virtual-product.min.js" type="text/javascript"></script>
+  </body>
+</html>

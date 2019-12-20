@@ -1,0 +1,436 @@
+/*
+  *To makes style for contact us pages
+  *This page tells the customers about our local
+  *The customer can contact us by this site
+  *The local in the map
+  *Author: sokvebol.kol
+*/
+
+  /*add font family roboto*/
+@font-face{
+   font-family:roboto;
+   src: url(font/Roboto-Regular.ttf);
+}
+
+body
+{
+  margin:0px;
+  padding: 0px;
+  background-color: white;
+  font-family:roboto;
+  color: #3c2e2eb8;
+  overflow-x:hidden;/*hide bar at the buttom*/
+}
+.container{
+  z-index: -1; /*the layer will below the menu when we scroll the top*/
+}
+/*scroll the top and fix*/
+.fix 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 5px;
+  }
+
+  .fix, +.container{ /*the sigh '+' to prevent scall menu*/
+    /*padding-top: 100px;*/
+  }
+
+/*=====banner image=============*/
+#banner-img
+{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+/*logo at left site*/
+#logo-top
+{
+  width: 210px;
+  position: relative;
+}
+
+/*hold menu*/
+.nav-bar{
+  position: relative;
+  top: -10px;
+}
+ul
+{
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);/*to identify the menu in the middle*/
+  background: #272624;
+  width: 100%;
+  height: 60px;
+} 
+/*menu*/
+ul li
+{
+  display: inline-block;
+  transform-style: preserve-3d;
+  position:relative;
+  left: 20%;
+  top: -73px;
+}
+ul li a
+{
+  font-size: 16px;
+  font-family: arial;
+  font-transform:uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  position: relative;
+}
+
+/*each menu*/
+ul li a span
+{
+  display: block;
+  padding: 0px 15px;
+  margin-left:10px;
+  width: 90px;
+}
+
+/*before event hover*/
+ul li a span:before
+{
+  content: attr(title);
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #008081;
+  color: #fff;
+  padding: 31px 45px; /*mouse hover will see the padding*/
+  width: 85px;
+  transform-style: preserve-3d;
+  transition: .5s;
+  transform: rotateX(90deg) translateY(50px);
+  transform-origin: bottom;
+}
+
+/*inimation rotax*/
+ul li a span:hover:before{
+  transform: rotateX(0deg) translateY(0px);
+}
+
+/*after event hover*/
+ul li a span:after{
+  content: attr(title);
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #272624;
+  color:#ecb551;
+  padding: 31px 45px;
+  width: 85px;
+  transform-style: preserve-3d;
+  transition: .5s;
+  transform: rotateX(0deg) translateY(0px);
+  transform-origin: top; /*To make rotax to the top of the menu*/
+}
+ul li a span:hover:after
+{
+  transform: rotateX(90deg) translateY(-10px);
+}
+
+
+.active a:visited
+{
+  position: relative;
+  background-color: red;
+}
+/*======container was separated into colunms map and input ======*/
+
+.container
+{
+  position: relative;
+  left: 3%;
+  right: 3%;
+  width: 100%;
+  line-height: 1.5;
+}
+h1 {
+  text-align: center;
+ 
+}
+.container,#our-local{
+  width: 95%;
+}
+.separate{
+  float: left;
+
+}
+
+.contact
+{
+  position: relative;
+  padding: 10px;
+  left: 30%;
+  top: 16px;
+  background: #fbf9f9;
+  height: 520px;
+  border-radius: 5px;
+}
+
+/*===========================input part========================*/
+input,textarea
+{
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 400px;
+  background: #fbf9f9;
+  outline: none;
+}
+textarea
+{
+  width: 400px;
+  height: 100px;
+  resize: none;
+  font-family: sans-serif;
+}
+/*=========contact and clear button=============================*/
+button
+{
+  position: relative;
+  width: 400px;
+  height:40px;
+  background: #4cae4c;
+  border: solid 1px #4cae4c;
+  border-radius: 5px;
+  color: #fbf9f0;
+  outline: none;
+}
+#btn-contact
+{
+   position: relative;
+}
+#btn-clear
+{
+  position: relative;
+  background: #eeb053;
+  border: solid 1px #eeb053;
+}
+#btn-fb
+{
+  position: relative;
+  background: #3b5998;
+  border:solid 1px #3b5998;
+  top: -10px;
+
+}
+button:hover
+{
+  position: absolute;
+  cursor: pointer;
+  }
+a
+{
+  text-decoration: none;
+  color: #fbf9f9;
+
+}
+/*============ascross border on text 'OR'================*/
+h6:before 
+{
+      content: "";
+      display: block;
+      border-top: solid 1px #808080c4;
+      width: 95%;
+      height: 1px;
+      position: absolute;
+      z-index: 1;
+      right: 3%;
+    }
+
+    h6 span 
+    {
+      background: #fbf9f9;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+      left: 42%;
+      top: -5px;
+      font-size: 13px;
+    }
+
+/*===============footer at the buttom of the page=================*/
+.my-footer /*hold footer*/
+{
+  position: absolute;
+  width: 100%;
+  top: 1400px;
+  height: 200px;
+  background: #0a0a0ad4;
+  color:#fbf9f9;
+}
+
+/*=============follow us===============*/
+.icons /*make all style elements in footer*/
+{
+  position: relative;
+  float: left;
+  width: 12%;
+  padding: 5px;
+  top: -26px;
+}
+.footer-row
+{
+  position: relative;
+  width: 100%;
+  top: 15px;
+}
+.follow-us
+{
+  position: relative;
+  width: 25%;
+  padding: 10px;
+  left: 25%;
+  font-weight: bold;
+
+}
+
+  /*============ font asci code left culunm==================*/
+  h4:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 9%;
+  }
+
+  h4 span 
+  {
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 33%;
+    top: -21px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+
+/*============copy right part in the midle culunm=========*/
+.col-midle
+{
+  position: relative;
+  width: 300px;
+}
+.float-cols{
+  position: relative;
+  float: left;
+  left: 6%;
+
+}
+#my-logo{
+  position: relative;
+  width: 55%;
+  left: 40%;
+}
+
+/*============font asci code midle site ==================*/
+  h3:before{
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 33%;
+  }
+  h3 span{
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 61%;
+    top: -21px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+
+/*=============right colunm===============*/
+.row-right
+{
+  width: 300px;
+  left: 20%;
+}
+#location
+{
+  position: relative;
+  left: 25%;
+  font-weight: bold;
+
+}
+#text-location{
+  font-size: 13px;
+  position: relative;
+  width: 200px;
+  left: 16%;
+  top: -20px;
+}
+ #text-copyRingt{
+  position: relative;
+  font-size: 13px;
+  left: 32%;
+}
+
+/*==============font asci code==================*/
+  h5:before{
+    content: "";
+    display: block;
+    border-top: solid 1px #808080c4;
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    left: 7%;
+    top:69px;
+  }
+  h5 span{
+    background: #333333;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    left: 35%;
+    top: -8px;
+    color: #fbf9f9;
+    font-size: 30px;
+  }
+hr.style-hr {
+width: 15%;
+margin-right:42.5%;
+margin-top: -20px;
+padding: 0;
+border: none;
+height: 2px;
+color: orange;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+text-align: center;
+}
+hr.style-hr:after {
+content:" ";
+display: inline-block;
+position: relative;
+top: -2.1em;
+font-size: 1.5em;
+padding: 19px 1.75em;
+background-size: 90px 90px;
+height: 2px;
+top: -20px;
+width: -50px
+}
